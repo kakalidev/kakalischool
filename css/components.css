@@ -1,0 +1,325 @@
+/* Shared rules previously repeated in page-level style blocks. */
+:focus-visible {
+  outline: 3px solid #f9d86d;
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  z-index: 10000;
+  padding: 1rem 1.5rem;
+  background: #800000;
+  color: #fff;
+  font-size: 16px;
+}
+
+.skip-link:focus {
+  left: 1rem;
+}
+
+.parallaxSection {
+  position: relative;
+}
+
+.parallaxContent {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  min-height: 150px;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 5%;
+  background: rgba(128, 0, 0, 0.84);
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.reveal-enabled [data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 560ms ease, transform 560ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.reveal-enabled [data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-stagger > [data-reveal]:nth-child(2) {
+  transition-delay: 80ms;
+}
+
+.reveal-stagger > [data-reveal]:nth-child(3) {
+  transition-delay: 160ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-enabled [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@media (min-width: 2560px) {
+  .parallaxContent {
+    font-size: 42px;
+  }
+}
+
+/* Contact and table pages. */
+td {
+  font-size: 15px;
+}
+
+.schoolMap {
+  display: flex;
+}
+
+.accordion-button.accordion-custom,
+.accordion-button.accordion-custom.collapsed {
+  border: 1px solid #800000;
+  background-color: #fffdd0;
+  color: #800000;
+  font-size: 20px;
+  box-shadow: none;
+}
+
+.accordion-button.accordion-custom:not(.collapsed) {
+  background-color: #800000;
+  color: #fff;
+}
+
+.accordion-button.accordion-custom:focus-visible {
+  outline: 3px solid #f9d86d;
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+.map1 img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 2rem auto;
+}
+
+@media (max-width: 991px) {
+  .schoolMap {
+    flex-direction: column;
+  }
+
+  .map1 img {
+    width: 100% !important;
+    max-width: 500px;
+    margin: 1rem auto;
+  }
+}
+
+header {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 0;
+  padding: 2rem;
+  background: #fffdd0;
+  border-bottom: 1px solid rgba(128, 0, 0, 0.08);
+}
+
+header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 1rem;
+  order: 1;
+  margin-left: 0;
+}
+
+header .logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+header .navbar {
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.4rem;
+  order: 3;
+  margin: 0;
+  padding: 0;
+}
+
+header #primary-navigation {
+  margin-right: 0;
+}
+
+header .navbar > a,
+header .navbar .dropbtn {
+  flex: 0 0 auto;
+  padding: 1rem 0.8rem;
+  border: 0;
+  background: transparent;
+  color: #1f1f1f;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+header .navbar a,
+header .navbar a:hover,
+header .navbar a:focus-visible {
+  text-decoration: none;
+}
+
+header .navbar .dropbtn {
+  white-space: nowrap;
+}
+
+header .navbar > a:hover,
+header .navbar .dropbtn:hover,
+header .navbar > a:focus-visible,
+header .navbar .dropbtn:focus-visible {
+  border-radius: 0.4rem;
+  background: #800000;
+  color: #fff !important;
+}
+
+header .dropdown {
+  position: relative;
+}
+
+header .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+  min-width: 18rem;
+  padding: 0.5rem 0;
+  border-radius: 0.8rem;
+  background: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12);
+}
+
+header .dropdown:hover .dropdown-content,
+header .dropdown.open .dropdown-content,
+header .dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+header .dropdown-content a {
+  display: block;
+  padding: 1rem 1.6rem;
+  color: #1f1f1f;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+header .dropdown-content a:hover,
+header .dropdown-content a:focus-visible {
+  background: rgba(128, 0, 0, 0.08);
+  color: #800000;
+}
+
+header #menu {
+  display: none;
+}
+
+@media (min-width: 2560px) {
+  header .navbar > a,
+  header .navbar .dropbtn {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 991px) {
+  header #menu {
+    display: block;
+    position: relative;
+    z-index: 3;
+    order: 0;
+    flex: 0 0 auto;
+    background: transparent;
+    color: #1f1f1f;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+
+  header .font-size-controls {
+    order: 2;
+    flex: 0 0 auto;
+    margin: 0;
+  }
+
+  header .logo {
+    order: 3;
+    gap: 0.4rem;
+    margin-left: 0;
+  }
+
+  header .logo img {
+    width: clamp(32px, 10vw, 44px);
+    height: clamp(32px, 10vw, 44px);
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    background: #fffdd0;
+    text-align: center;
+    transform: none;
+    opacity: 1;
+  }
+
+  header .navbar.nav-toggle {
+    display: flex;
+  }
+
+  header .navbar > a,
+  header .navbar .dropbtn {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  header .dropdown-content {
+    position: static;
+    margin-top: 0.5rem;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: none;
+    text-align: center;
+  }
+
+  header .dropdown-content a {
+    text-align: center;
+  }
+}

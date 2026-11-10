@@ -1,0 +1,30 @@
+.block {
+    border: none;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-bottom: -30px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+  }
+  
+  .blockHeading {
+    font-size: 20px;
+  }
+  
+  .blockHeading:before {
+    content: open-quote;
+    font-weight: bold;
+    font-size: 100px;
+    color: #800000;
+    position: relative;
+    top: 45px;
+  }
+  
+  .blockHeading:after {
+    content: close-quote;
+    font-weight: bold;
+    font-size: 100px;
+    color: #800000;
+    position: relative;
+    left: 165px;
+  }

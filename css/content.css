@@ -1,0 +1,215 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+.genImg img {
+    display: block;
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+    object-fit: contain;
+}
+.container{
+    margin-top:100px;
+    margin-bottom: 50px;
+}
+.brand-logo {
+    height: 80px;
+    width: 80px;
+}
+.img-cover {
+    object-fit: cover;
+}
+.img-offset-top {
+    margin-top: 50px;
+}
+.gen-image-offset {
+    margin-top: 50px;
+}
+.section-offset-hero {
+    margin-top: 300px;
+}
+.footer-list {
+    padding: 0;
+}
+.page-shell {
+    margin-bottom: 160px;
+}
+.prayer-shell {
+    margin-bottom: 100px;
+}
+.page-column-offset {
+    margin-top: 100px;
+}
+.genHeading{
+    font-size: 60px;
+    color: #800000;
+    overflow-wrap: anywhere;
+}
+.genSubHeading{
+    font-size: 25px;
+    font-weight: 800;
+}
+.section-spaced-lg {
+    margin-top: 60px;
+}
+.section-spaced-md {
+    margin-top: 20px;
+}
+.section-spaced-xl {
+    margin-top: 50px;
+}
+.info-list-item {
+    font-size: 20px;
+    font-weight: 500;
+}
+.genPara{
+    font-size: 18px;
+    margin-top: 12px;
+    line-height: 1.5;
+}
+.page-content-offset {
+    padding-left: 3rem;
+}
+.section-heading-brand {
+    color: #800000;
+}
+.parallaxContent {
+    height: 150px;
+    background-color: transparent;
+    font-size: 30px;
+}
+.contact-title {
+    margin: 50px;
+}
+.video-frame {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 4 / 3;
+    height: auto;
+}
+.prayer-image {
+    display: block;
+    width: 100%;
+    max-width: 418px;
+    height: auto;
+    margin-top: 50px;
+}
+.noticePic {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 1.5rem auto;
+    object-fit: contain;
+}
+.map {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+}
+.accordion-custom {
+    font-size: 20px;
+    background-color: #800000;
+    color: white;
+}
+.data-table {
+    margin-top: 20px;
+}
+.data-table thead th {
+    font-size: 20px;
+}
+.table-header-text {
+    font-size: 20px;
+}
+.card-title-compact {
+    font-size: 20px;
+}
+.card-text-compact {
+    font-size: 12px;
+}
+.about-section-home {
+    margin-top: 80px;
+    background-color: #FFFDD0;
+}
+.pillar-image {
+    height: 380px;
+    width: 380px;
+    object-fit: cover;
+}
+.notice-image {
+    height: 600px;
+    width: 450px;
+    object-fit: contain;
+}
+@media (max-width:991px){
+    .container{
+        width: 95% !important;
+        max-width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .genImg img {
+        width: 100%;
+        max-width: 430px;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .section-offset-hero,
+    .page-column-offset {
+        margin-top: 2rem;
+    }
+    .img-offset-top,
+    .prayer-image {
+        margin-top: 1.5rem;
+    }
+    .pray {
+        width: 100% !important;
+        max-width: 420px;
+        height: auto;
+    }
+}
+@media (max-width:576px) {
+    .genHeading {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 2560px) {
+    .genHeading {
+        font-size: 88px;
+        line-height: 1.15;
+    }
+
+    .genSubHeading {
+        font-size: 38px;
+        line-height: 1.35;
+    }
+
+    .genPara,
+    .info-list-item {
+        font-size: 28px;
+        line-height: 1.6;
+    }
+
+    .data-table,
+    .data-table thead th,
+    .table-header-text {
+        font-size: 26px;
+    }
+
+    .card-title-compact {
+        font-size: 28px;
+    }
+
+    .card-text-compact {
+        font-size: 16px;
+    }
+
+    .accordion-custom {
+        font-size: 28px;
+    }
+}

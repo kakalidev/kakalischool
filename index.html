@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakali - Home Page</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="assets/images/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" sizes="32x32">
+    
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- header section starts  -->
+
+<header>
+    <button type="button" id="menu" class="fas fa-bars" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation"></button>
+
+    <a href="https://kakalischool.com" class="logo" aria-label="Kakali School home page">
+        <img src="assets/images/mainLogo.png" alt="Kakali School crest">
+        <img src="assets/images/kakaliLogo2.png" alt="Kakali School wordmark">
+    </a>
+
+    <nav class="navbar" id="primary-navigation" aria-label="Main navigation">
+        <a href="notice.html" class="selected">Notices</a>
+        <a href="gallery.html">Gallery</a>
+        <div class="dropdown">
+            <button type="button" class="dropbtn" aria-expanded="false" aria-controls="infrastructure-menu" aria-haspopup="true">Infrastructure
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div id="infrastructure-menu" class="dropdown-content" role="menu">
+              <a href="general.html" role="menuitem">General</a>
+              <a href="medical.html" role="menuitem">Medical</a>
+              <a href="lab.html" role="menuitem">Laboratory</a>
+              <a href="lib.html" role="menuitem">Library</a>
+              <a href="playroom.html" role="menuitem">Playroom</a>
+            </div>
+          </div>
+        <div class="dropdown">
+            <button type="button" class="dropbtn" aria-expanded="false" aria-controls="about-menu" aria-haspopup="true">About Us
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div id="about-menu" class="dropdown-content" role="menu">
+              <a href="history.html" role="menuitem">History</a>
+              <a href="mission.html" role="menuitem">Mission and Vision</a>
+              <a href="management.html" role="menuitem">School Management</a>
+              <a href="awards.html" role="menuitem">Awards and Accolades</a>
+              <a href="prayer.html" role="menuitem">Prayer</a>
+            </div>
+          </div>
+        
+        <div class="dropdown">
+            <button type="button" class="dropbtn" aria-expanded="false" aria-controls="academics-menu" aria-haspopup="true">Academics
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div id="academics-menu" class="dropdown-content" role="menu">
+              <a href="uniform.html" role="menuitem">School Uniform</a>
+              <a href="holiday.html" role="menuitem">Holiday</a>
+              <a href="rule.html" role="menuitem">Rules and Regulations</a>
+              <a href="fee.html" role="menuitem">Fees Structure</a>
+            </div>
+          </div>
+       
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <form action="" id="search-box" class="search-box" role="search">
+        <label class="sr-only" for="search">Search school content</label>
+        <input type="search" id="search" placeholder="Search here" aria-label="Search school content">
+        <button type="button" class="search-toggle" aria-label="Toggle search" aria-expanded="false"><span class="fas fa-search" aria-hidden="true"></span></button>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<main id="main-content" tabindex="-1">
+<section class="home" id="home">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/banner5.jpeg" class="d-block w-100" alt="...">
+              </div>
+          <div class="carousel-item">
+            <img src="assets/images/banner1.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/banner2.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/banner4.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <!-- <div class="content">
+        <span>upto 50% off</span>
+        <h3>we care about <br> your pet!</h3>
+        <a href="#" class="btn">get started</a>
+    </div> -->
+
+</section>
+
+<!-- home section ends -->
+
+<section class="about about-section-home">
+   <div class="aboutMain">
+        <div class="aboutImage" data-reveal>
+            <img src="assets/images/aboutContent.jpeg" alt="">
+        </div>
+        <div class="aboutContent" data-reveal>
+            <h2>Kakali Nursery K.G & Primary School <br>And<br> Kakali Vidyamandir(High School)</h2>
+            <br>
+            <h3>Empowering Minds, Enhancing Futures</h3>
+            <p>We are revolutionizing education with compassionate teaching. Our collaborative community fosters curiosity, creativity and critical thinking.
+
+                Join us in shaping the leaders of tomorrow.</p>
+            <a href="history.html" class="btn1">Learn More</a>
+        </div>
+   </div>
+
+</section>
+
+<!-- category section starts  -->
+
+<section class="category" id="category">
+
+    <h1 class="heading section-heading-brand" data-reveal> Pillars of Our School  </h1>
+
+    <div class="box-container reveal-stagger">
+        
+        <div class="box" data-reveal>
+            <img src="assets/images/pillar1.jpeg" alt="" class="pillar-image">
+            <h3>Bandana Roy</h3>
+            <h3>Founder</h3>
+           
+        </div>
+
+        <div class="box" data-reveal>
+            <img src="assets/images/pillar2.jpeg" alt="" class="pillar-image">
+            <h3>Soumitra Banerjee</h3>
+            <h3>Founder</h3>
+         
+        </div>
+
+        <div class="box" data-reveal>
+            <img src="assets/images/anjana.jpeg" alt="" class="pillar-image">
+            <h3>Anjana Chatterjee</h3>
+            <h3>Founder</h3>
+           
+        </div>
+
+    </div>
+    
+    <div class="page-content-offset" data-reveal>
+        <a href="management.html" class="btn1">Learn More</a>
+    </div>
+
+</section>
+
+<!-- category section ends -->
+
+
+<!-- category section starts  -->
+
+<section class="category" id="category">
+
+    <h1 class="heading section-heading-brand" data-reveal> Important Notice  </h1>
+
+    <div class="box-container reveal-stagger">
+        
+        <div class="box" data-reveal>
+            <img src="assets/images/notice2026.jpeg" alt="" class="notice-image">
+        </div>
+
+        <div class="box" data-reveal>
+            <img src="assets/images/noticeBeng2026.jpeg" alt="" class="notice-image">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- category section ends -->
+
+
+
+<section class="featured" id="featured">
+
+    <h1 class="heading section-heading-brand" data-reveal> Key differentiating characteristics of the School </h1>
+
+    <div class="box-container reveal-stagger">
+
+        <div class="box" data-reveal>
+           
+            <img src="assets/images/academy1.webp" alt="">
+            <div class="content">
+                <!-- <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div> -->
+                <h3>Tomorrow’s Leaders</h3>
+               <!-- <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                
+            </div>
+        </div>
+
+        <div class="box" data-reveal>
+           
+            <img src="assets/images/academy2.webp" alt="">
+            <div class="content">
+                <!-- <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div> -->
+                <h3>Making a Difference</h3>
+                <!--<p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+                
+            </div>
+        </div>
+        <div class="box" data-reveal>
+           
+            <img src="assets/images/academy3.webp" alt="">
+            <div class="content">
+                <!-- <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div> -->
+                <h3>Strong Bond That Lasts</h3>
+                <!--<p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+                
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="parallaxSection" id="parallaxSection">
+    <div class="parallax"></div>
+
+<div class="parallaxContent" data-reveal>
+    To be a premier institution committed to academic excellence, nurturing well rounded individuals with the passion for lifelong learning.
+</div>
+
+</section>
+<section class="featured" id="featured">
+
+    <h1 class="heading section-heading-brand" data-reveal>Established Students</h1>
+
+    <div class="box-container reveal-stagger">
+
+        <div class="box" data-reveal>
+           
+            <img src="assets/images/academy1.webp" alt="">
+            <div class="content">
+                <!-- <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div> -->
+                <h3>Tomorrow’s Leaders</h3>
+                <!--<p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+                
+            </div>
+        </div>
+
+        <div class="box" data-reveal>
+           
+            <img src="assets/images/academy2.webp" alt="">
+            <div class="content">
+                <!-- <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div> -->
+                <h3>Making a Difference</h3>
+                <!--<p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+                
+            </div>
+        </div>
+        <div class="box" data-reveal>
+           
+            <img src="assets/images/academy3.webp" alt="">
+            <div class="content">
+                <!-- <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div> -->
+                <h3>Strong Bond That Lasts</h3>
+                <!--<p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+                
+            </div>
+        </div>
+      
+
+    </div>
+
+</section>
+</main>
+
+<!-- contact section ends -->
+
+<!-- footer section  -->
+<footer class="footer">
+    <div class="footerContainer">
+        <div class="footerRow">
+            <div class="footerCol">
+                <h4>Our School</h4>
+                <ul class="footer-list">
+                    <li><a href="history.html">about us</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="general.html">general infrastructure</a></li>
+                    <li><a href="mission.html">our mission</a></li>
+                </ul>
+            </div>
+            <div class="footerCol">
+                <h4>Address</h4>
+                <ul class="footer-list">
+                    <li><a href="https://maps.app.goo.gl/vnq5izuMDJQufXcV8" target="_blank">Address 1 : 17/1 Jadav Ghosh Road, Sarsuna,Behala, Kolkata - 700061</a></li>
+                    <li><a href="https://maps.app.goo.gl/zT9GuPnQSi6p8E1u5" target="_blank">Address 2 : 220, Bagpota Road, Debinagar, Kolkata - 700061</a></li>
+                </ul>
+            </div>
+            <div class="footerCol">
+                <h4>Contact Info</h4>
+                <ul class="footer-list">
+                    <li><a href="#">9331984236</a></li>
+                    <li><a href="#">8910738772</a></li>
+                    <li><a href="#">6290656183</a></li>
+                </ul>
+            </div>
+        </div>
+            <div class="footerRow">
+                <div class="footerCol social-footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100065299367757&mibextid=ZbWKwL" target="_blank" title="Facebook page of Kakali"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/kakalividyamandir/profilecard/?igsh=MWZxejVidHJ4d2poMg==" target="_blank" title="Instagram page of Kakali"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@kakalischool?si=8GgLo8X5fDoMywb_" target="_blank" title="Youtube channel of Kakali"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+        
+    </div>
+</footer>
+<!-- <section class="footer">
+    
+    <div class="share">
+        <a href="#" class="btn">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#" class="btn">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="btn">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="btn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" class="btn">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+
+    <h1 class="credit"> created by <span>Sayan Ghosh </span> | all rights reserved! </h1>
+
+</section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/site.js"></script>
+<script src="js/home-reveal.js"></script>
+
+</body>
+</html>
