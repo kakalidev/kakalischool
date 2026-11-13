@@ -300,17 +300,17 @@ header.sticky{
 
 .category .box-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
     padding: 1rem 0;
-   
 }
 
-
 .category .box-container .box{
-    width:38rem;
-    margin:2rem;
+    flex: 1 1 32rem;
+    max-width: 38rem;
+    margin: 1rem;
     text-align: center;
 }
 

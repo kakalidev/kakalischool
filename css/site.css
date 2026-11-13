@@ -109,6 +109,61 @@ header.sticky {
 	align-items: flex-start;
 }
 
+#category .notice-group {
+	margin: 1rem auto 2rem;
+}
+
+#category .notice-group-title {
+	margin: 1rem 0;
+	text-align: center;
+	font-size: 2.2rem;
+	color: #333;
+}
+
+#category .notice-group .box-container {
+	align-items: center;
+}
+
+#category .notice-group .box {
+	position: relative;
+	aspect-ratio: 3 / 4;
+}
+
+#category .notice-group .notice-image {
+	display: block;
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+@media (max-width: 991px) {
+	#category .notice-group .box-container {
+		align-items: stretch;
+		gap: 1.5rem;
+	}
+
+	#category .notice-group .box-container .box {
+		width: 100%;
+		max-width: none;
+		flex: 0 1 auto;
+		margin: 0;
+	}
+
+	#category .notice-group .notice-image {
+		width: 100% !important;
+		max-width: 100%;
+	}
+
+	#category .notice-group-title {
+		font-size: 1.8rem;
+		line-height: 1.4;
+		padding-left: 2rem;
+		text-align: left;
+	}
+}
+
 #category .pillar-image {
 	width: 100% !important;
 	height: auto;

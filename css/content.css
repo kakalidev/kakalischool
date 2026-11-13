@@ -104,6 +104,15 @@ img {
     margin: 1.5rem auto;
     object-fit: contain;
 }
+.notice-school {
+    margin: 2rem auto;
+}
+.notice-school-title {
+    margin: 1rem 0;
+    color: #333;
+    font-size: 2.2rem;
+    text-align: center;
+}
 .map {
     display: block;
     width: 100%;
@@ -139,10 +148,13 @@ img {
     object-fit: cover;
 }
 .notice-image {
-    height: 600px;
-    width: 450px;
+    display: block;
+    width: min(100%, 45rem);
+    aspect-ratio: 3 / 4;
     object-fit: contain;
+    margin: 0 auto;
 }
+
 @media (max-width:991px){
     .container{
         width: 95% !important;
